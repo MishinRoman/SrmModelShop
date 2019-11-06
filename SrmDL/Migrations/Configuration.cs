@@ -1,0 +1,23 @@
+﻿namespace SrmDL.Migrations
+{
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<SrmBL.Model.SrmContext>
+    {
+        public Configuration()
+        {
+            AutomaticMigrationsEnabled = true;
+        }
+
+        protected override void Seed(SrmBL.Model.SrmContext context)
+        {
+            //  This method will be called after migrating to the latest version.
+
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
+            //  to avoid creating duplicate seed data.
+        }
+    }
+}
